@@ -1,0 +1,62 @@
+# da c://Users/Administrator
+# 
+# pip install -r requirements.txt
+# package base
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+
+# package per grafica avanzata
+plotly
+plotly.express
+bar_chart_race 
+d3blocks
+
+# estensioni jupyter
+jupyter_contrib_nbextensions
+# jupyter nbextensions_configurator enable
+
+# package metadati
+importlib_metadata
+
+#  package display immagini
+IPython
+
+# package libro DMBA
+dmba
+
+# package di A. Introduzione
+import_ipynb
+jupyter_datatables
+altair
+feature_engine
+# ydata-profiling 
+great_tables
+skimpy
+summarytools 
+pip-audit
+
+# scikit-learn
+scikit-learn
+
+# package dei notebook B-I
+supertree
+mlxtend
+
+# package per SQLite3
+sqlalchemy
+
+# PyTorch
+# torch
+
+# TensorFlow
+# tensorflow
+# tensorflow-datasets
+
+# statsmodels - dà errore --> da fare singolarmente (pip install statsmodels)
+# statsmodels
+
+# deployment modello - dà errore, anche singolarmente (pip install modelbit)
+# modelbit

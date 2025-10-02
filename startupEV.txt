@@ -1,0 +1,48 @@
+# reset EV Python da zero
+
+# cancellazione l'ambiente "myenv"
+conda env list  # lista ambienti virtuali (EV) Python 
+conda deactivate # se siamo nell'ambiente "myenv"
+conda remove --name myenv --all  # cancella l'ambiente "myenv"
+conda env list     # ora c'è solo l'ambiente base
+
+# rimozione fisica della directory dell'ambiente "myenv" (per sicurezza) 
+# in genere è sotto anaconda3/envs
+# la si può trovare con: conda info --envs
+cd anaconda3
+cd envs             
+rmdir /s myenv  # cancella fisicamente la cartella "myenv"
+cd ..
+cd ..
+
+
+# creazione del nuovo EV "myenv"
+conda create -n myenv python
+conda env list      # deve esserci
+conda activate myenv
+
+# installazione dei 5 package fondamentali del corso (in myenv - attenzione)
+conda install numpy
+conda install pandas
+conda install scipy
+conda install matplotlib
+conda install scikit-learn
+
+conda list  # la lista dei package installati nell?EV corrente
+
+# installazione di Jupyter Notebook (nell'ambiente myemv)
+conda install jupyter
+conda list # Jupyter Notebook compare come “notebook”
+
+# installazione del kernel
+conda install ipykernel
+
+# le operazioni sino a qui sono persistenti
+
+# Il seguente comando serve per rendere disponibile un ambiente virtuale come kernel in Jupyter Notebook (selezionabile in Jupyter Notebook):
+
+conda activate myenv
+python -m ipykernel install --user --name myenv --display-name "myenv"
+
+# attivazione jupyter notebook
+jupyter notebook
