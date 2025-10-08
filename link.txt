@@ -1,0 +1,12 @@
+# link al repo github del corso
+https://github.com/antonio-corsi/Repo-del-corso-Python-for-Data-Scientist
+
+# link al laboratorio godeploy
+https://lms.godeploy.it/
+Key: J85HRQ
+
+# video di introduzione alla maccchina virtuale
+https://share.synthesia.io/65551e7e-bd01-4bde-aabc-0d3f3848bd67
+
+# link alla demo degli alberi decisionali
+http://www.r2d3.us/visual-intro-to-machine-learning-part-1/ 
